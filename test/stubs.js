@@ -2,7 +2,7 @@ var nock   = require('nock');
 
 function createStubs() {
 
-	var goodAuthApi = nock('https://api.fastly.com').matchHeader('X-Fastly-Key', '6ea7c6ed310d436339bc6cfe92265f54')
+	var goodAuthApi = nock('https://api.fastly.com').matchHeader('Fastly-Key', '6ea7c6ed310d436339bc6cfe92265f54')
 
 				// testBackendHealthCheck
 				.get('/service/oOW2G2kwDaaXJVNaaPgpx/version/1/backend/check_all')
